@@ -13,7 +13,7 @@ namespace Exercises
             string phrase = input.ToLower();
             foreach(char letter in alphabet)
             {
-                if (phrase.IndexOf(letter) > -1)
+                if (phrase.Contains(letter))
                 {
                     // add 1 to number of letters found
                     lettersFound++;
