@@ -29,5 +29,14 @@ namespace Exercises.Tests
             DateTime expectedResult = new(2052, 10, 3, 1, 46, 39);
             actualResult.Should().Be(expectedResult);
         }
+
+        [Test]
+        public void AddGigaSecond_Should_Return_Result_When_DateTime_Is_Specified_With_Ticks()
+        {
+            DateTime actualResult = Exercise004.AddGigaSecond(new DateTime(100000000000));
+            DateTime expectedResult = new(32, 9, 9, 4, 33, 20);
+            actualResult.Should().Be(expectedResult);
+        }
+
     }
 }
